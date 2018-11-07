@@ -1,0 +1,25 @@
+<mat-sidenav-container class="sidenav" (backdropClick)="close('backdrop')">
+  <!-- xs-visible -> Sidenav content -->
+  <mat-sidenav position="end" class="sidenav__content" #sidenav (keydown.escape)="close('escape')" disableClose>
+    <button (click)="close()" routerLink="" routerLinkActive="active-link">Home</button>
+    <button (click)="close()" routerLink="work" routerLinkActive="active-link">Work</button>
+    <button (click)="close()" routerLink="about" routerLinkActive="active-link">About</button>
+    <button (click)="close()" routerLink="blog" routerLinkActive="active-link">Blog</button>
+    <button (click)="close()" routerLink="contact" routerLinkActive="active-link">Contact</button>
+    <button (click)="close()" routerLink="join" routerLinkActive="active-link">Join Us</button>
+  </mat-sidenav>
+
+  <!-- Button to open side naviagtion -->
+  <mat-sidenav-content class="sidenav__body-content">
+    <!-- xs-visible -> Sidenav open button -->
+    <i class="material-icons sidenav__body-content__button" (click)="sidenav.open()">
+      subject
+    </i>
+    <!-- Body content -->
+    <app-navigation></app-navigation>
+    <!-- Route content display -->
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+    <!-- End of -> Body content -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

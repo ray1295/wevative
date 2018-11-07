@@ -1,3 +1,19 @@
-<p>
-  navigation works!
-</p>
+<mat-toolbar class="navigation">
+  <!-- Site logo -> linking to home page -->
+  <a routerLink="">
+    <img class="navigation__logo" src="{{ navLogo }}" alt="Wevative logo" />
+  </a>
+  <!-- md-visible Sidebav -->
+  <!-- <app-sidenav></app-sidenav> -->
+  <!-- Nav content spacer -->
+  <span class="navigation__spacer"></span>
+  <div class="navigation__links">
+    <!-- lg-visible page links -->
+    <button routerLink="" routerLinkActive="active-link">Home</button>
+    <button routerLink="work" routerLinkActive="active-link">Work</button>
+    <button routerLink="about" routerLinkActive="active-link">About</button>
+    <button routerLink="blog" routerLinkActive="active-link">Blog</button>
+    <button routerLink="contact" routerLinkActive="active-link">Contact</button>
+    <button routerLink="join" routerLinkActive="active-link">Join Us</button>
+  </div>
+</mat-toolbar>

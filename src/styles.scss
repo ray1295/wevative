@@ -1,3 +1,22 @@
+// Including a theme is required
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Modules
+@import "stylesheets/modules/colors";
+@import "stylesheets/modules/utility";
+
+// Partials
+@import "stylesheets/partials/reset";
+@import "stylesheets/partials/typography";
+@import "stylesheets/partials/forms";
+@import "stylesheets/partials/buttons";
+
+// Components SCSS
+@import "app/shared/components/navigation/navigation.component.scss";
+@import "app/shared/components/footer/footer.component.scss";
+
+// Styles \\
+
 // Mobile
 @media only screen and (min-width: 320px) {}
 // Tablet 
@@ -7,3 +26,17 @@
 // Desktop
 @media only screen and (min-width: 1280px) {}
 
+html, body {
+  height: 100%;
+  display: block;
+}
+
+body {
+  @extend %font-shared;
+  padding: 0;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
