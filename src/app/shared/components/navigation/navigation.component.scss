@@ -3,6 +3,7 @@
   .navigation {
     padding: 4% 7.5% !important;
     background: none !important;
+    margin-bottom: 5%;
     a {
       display: inline-flex;
     }
@@ -17,7 +18,7 @@
       button {
         display: inline-block;
         font-weight: 700 !important;
-        padding: 0 4.5%;
+        padding: 0 0 0 8%;
       }
     }
   } 
@@ -26,8 +27,13 @@
 @media only screen and (min-width: 768px) {
   .navigation {
     &__links {
-      display: unset;
+      display: inline-flex;
+      flex: 1;
+      justify-content: flex-end;
       button {}
+    }
+    &__logo {
+      height: 32px;
     }
   } 
 }

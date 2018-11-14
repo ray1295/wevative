@@ -6,8 +6,10 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { JoinUsComponent } from './pages/join-us/join-us.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'work', component: WorkComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'join', component: JoinUsComponent },

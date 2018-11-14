@@ -11,7 +11,10 @@
 @import "stylesheets/partials/forms";
 @import "stylesheets/partials/buttons";
 
-// Components SCSS
+// Pages 
+@import "app/pages/home/home.component.scss"; 
+
+// Components
 @import "app/shared/components/navigation/navigation.component.scss";
 @import "app/shared/components/footer/footer.component.scss";
 

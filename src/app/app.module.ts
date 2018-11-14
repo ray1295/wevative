@@ -13,6 +13,7 @@ import { NavigationComponent } from './shared/components/navigation/navigation.c
 import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SidenavComponent } from './shared/components/sidenav/sidenav.component'
     FooterComponent,
     AboutComponent,
     SidenavComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
