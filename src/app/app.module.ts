@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RecentWorkComponent } from './components/recent-work/recent-work.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomeComponent } from './pages/home/home.component';
     AboutComponent,
     SidenavComponent,
     HomeComponent,
+    RecentWorkComponent,
   ],
   imports: [
     BrowserModule,
