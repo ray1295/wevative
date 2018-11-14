@@ -1,13 +1,13 @@
 // Mobile
 @media only screen and (min-width: 320px) {
   .navigation {
+    padding: 4% 7.5% !important;
     background: none !important;
     a {
       display: inline-flex;
     }
     &__logo {
-      width: 50px;
-      height: 50px;
+      height: 24px;
     }
     &__spacer {
     flex: 1 1 auto;
@@ -16,6 +16,8 @@
       display: none;
       button {
         display: inline-block;
+        font-weight: 700 !important;
+        padding: 0 4.5%;
       }
     }
   } 
