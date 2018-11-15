@@ -19,6 +19,9 @@
         display: inline-block;
         font-weight: 700 !important;
         padding: 0 0 0 8%;
+        &:hover {
+          color: $color-gray;
+        }
       }
     }
   } 

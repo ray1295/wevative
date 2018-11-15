@@ -1,0 +1,14 @@
+.join-us {
+    &__gen-join {
+        color: $color-white;
+        background-color: $color-darking;
+        padding: 5%;
+        h4 {
+            width: 60%;
+            margin: 3% 0;
+        }
+        button {
+            padding: 12px 24px;
+        }    
+    }
+}

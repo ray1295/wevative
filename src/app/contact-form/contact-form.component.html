@@ -1,0 +1,17 @@
+<div class="contact-form">
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Your name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Your company email" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <textarea matInput placeholder="What can we help you with?"></textarea>
+    <mat-hint>We look after you personal data according to our <a>privacy policy</a></mat-hint>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Let's work together</button>
+</div>

@@ -1,0 +1,15 @@
+.contact-form {
+    .mat-form-field {
+        width: 100%;
+    }
+    &__inputs {
+        flex: 1;
+        textarea {
+            height: 100px;
+        }
+        button {
+            padding: 12px 24px;
+            margin: 5% 0;
+        }
+    }
+}

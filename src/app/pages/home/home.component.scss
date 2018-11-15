@@ -11,3 +11,71 @@
 
     }
 }
+
+.in-touch  {
+    padding: 5% 0;
+    &__header {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+        padding: 30px 0;
+        position: relative;
+        background-color: $color-background;
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+            bottom: -50px;
+            left: 50%;
+            height: 360px;
+            width: 2px;
+            background-color: #e5e5e5;
+        }
+    }
+    &__form {
+        display: flex;
+        padding-top: 3%;
+        &__heading {
+            flex: 1;
+            font-size: 5rem;
+            text-transform: uppercase;
+            &--1 {
+                line-height: normal;
+                font-size: 20%;
+                display: block;
+            }
+            &--2 {
+                line-height: normal;
+                font-size: 40%;
+                display: block;
+            }            
+            &--3 {
+                line-height: normal;
+                font-size: 60%;
+                display: block;
+            }
+            &--4 {
+                line-height: normal;
+                font-size: 80%;
+                display: block;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+        }
+        .mat-form-field {
+            width: 100%;
+        }
+        &__inputs {
+            flex: 1;
+            textarea {
+                height: 100px;
+            }
+            button {
+                padding: 12px 24px;
+                margin: 5% 0;
+            }
+        }
+    }
+}
