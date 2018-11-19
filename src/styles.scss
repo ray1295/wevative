@@ -11,17 +11,17 @@
 @import "stylesheets/partials/forms";
 @import "stylesheets/partials/buttons";
 
-// Pages 
-@import "app/pages/home/home.component.scss"; 
-@import "app/pages/work/work.component.scss";
-@import "app/pages/join-us/join-us.component.scss";
-
 // Components
 @import "app/shared/components/navigation/navigation.component.scss";
 @import "app/shared/components/footer/footer.component.scss";
 @import "app/components/recent-work/recent-work.component.scss";
 @import "app/projects/project-items/project-items.component.scss";
 @import "app/contact-form/contact-form.component.scss";
+
+// Pages 
+@import "app/pages/home/home.component.scss"; 
+@import "app/pages/work/work.component.scss";
+@import "app/pages/join-us/join-us.component.scss";
 
 // Styles \\
 

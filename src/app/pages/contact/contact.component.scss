@@ -1,0 +1,21 @@
+.contact {
+    &__body {
+        display: flex;
+        &--1 {
+            flex: 1;
+            &__reach {
+                display: flex;
+                margin-bottom: 10%;
+                &--ing {
+                    flex: 1;
+                    p {
+                        margin-bottom: 3%;
+                    }
+                }
+           }
+        }
+        &--2 {
+            flex:1;
+        }
+    }
+}

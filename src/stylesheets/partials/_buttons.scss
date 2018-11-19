@@ -13,7 +13,7 @@
   @extend %font-shared;
   background: transparent;
   border: none;
-  display: block;
+  display: block !important;
   padding: 8px 12px;
   cursor: pointer;
   text-decoration: none;
