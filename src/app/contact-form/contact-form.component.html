@@ -1,20 +1,75 @@
 <!-- Shared Component -> Start -->
 <div class="contact">
-  <mat-form-field appearance="fill">
-    <input matInput placeholder="Your name">
-  </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <input matInput placeholder="Your company email" formControlName="email" required>
-    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-  </mat-form-field>
+  <!-- Form -->
+  <form class="contact__form" [formGroup]="contactForm" ngSubmit="onSubmit()">
 
-  <mat-form-field appearance="fill">
-    <textarea matInput placeholder="What can we help you with?"></textarea>
-  </mat-form-field>
+    <!-- First & Last Name -> INCOMPLETE: Add error message -->
+    <h4>Name</h4>
+    <table class="contact__form__table" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="contact__form__table--left" appearance="outline">
+            <input matInput type="text" formControlName="firstName">
+            <mat-hint>First Name</mat-hint>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field appearance="outline">
+            <input matInput type="text" formControlName="lastName">
+            <mat-hint>Last Name</mat-hint>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
 
-  <mat-checkbox>I understand that Wevative will securely hold my data in accordance with their <a>Privacy Policy</a>.</mat-checkbox>
+    <!-- Compnay Name -->
+    <h4>Company Name</h4>
+    <mat-form-field appearance="outline">
+      <input matInput type="text" formControlName="companyName">
+    </mat-form-field>
 
-  <button mat-raised-button color="primary">Let's work together</button>
+    <!-- Email -> INCOMPLETE: Add validator -->
+    <h4>Email</h4>
+    <mat-form-field appearance="outline">
+      <input matInput type="email" formControlName="email">
+      <!-- <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error> -->
+    </mat-form-field>
+
+    <!-- Porject Budget -> INCOMPLETE: Finish design and implementation -->
+    <h4>Project Budget (rough number)</h4>
+    <div class="contact__slider__indicators">
+        <span class="contact__slider__indicators left">{{ min }}</span>
+        <span class="contact__slider__indicators right">{{ max }}</span>
+    </div>
+
+    <mat-slider [max]="max" [min]="min" [step]="step" [thumbLabel]="thumbLabel" [(ngModel)]="value" formControlName="projectBud">
+    </mat-slider>
+    
+
+    <!-- Project Type -> INCOMPLETE: Retrieve project type -->
+    <h4>Project Type</h4>
+    <mat-form-field>
+      <mat-select formControlName="projectType" multiple>
+        <mat-option *ngFor="let projectType of projectTypes" [value]="projectTypes">{{ projectTypes }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Message -> INCOMPLETE: Placeholder text -->
+    <h4>What can we help you with?</h4>
+    <mat-form-field appearance="outline">
+      <textarea matInput #message maxlength="256" type="text" formControlName="message"></textarea>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+
+    <!-- Checkbox -> INCOMPLETE: Link && Theme && remove margin-bottom -->
+    <mat-checkbox formControlName="privacyPolicy">I understand that Wevative will securely hold my data in accordance
+      with their <a>Privacy Policy</a>.</mat-checkbox>
+
+    <!-- Submit button -> Test -->
+    <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid">Let's work together</button>
+  </form>
+  <!-- End of form -->
+
 </div>
 <!-- Shared Component -> End -->

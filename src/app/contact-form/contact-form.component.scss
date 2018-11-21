@@ -1,7 +1,22 @@
     .contact {
+        &__form {
+            // 'Name' table display full 
+            &__table {
+                width: 100%;
+                // Spacing between 'Name' inputs
+                &--left {
+                    margin-right: 10px;
+                }
+            }
+        }
         margin: 3% 0;
-        .mat-form-field {
+        .mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
+            padding: 0;
+        }
+        .mat-form-field,
+        .mat-slider {
             width: 100%;
+            margin-bottom: 3%;
         }
         textarea {  
             height: 100px;
@@ -10,4 +25,31 @@
             padding: 12px 24px;
             margin: 3% 0;
         }
+        .mat-form-field-infix {
+            border-top: 0.44em solid transparent;
+        }
+        .mat-slider-thumb-label {
+            transform: rotate(0deg) !important;
+            border-radius: 0% 0% 0 !important;
+            width: 60px;
+            height: 30px;
+            top: -50px !important;
+            left: 647px !important;
+          }
+          .mat-slider-track-wrapper,
+          .mat-slider-track-background, 
+          .mat-slider-track-fill {
+              height: 10px !important;
+          }
+          .mat-slider-track-background {
+            background-color: rgba(0,0,0,.1) !important; 
+          }
+          .mat-slider-thumb {
+            transform: scale(0) !important;
+          }
+          
+          .mat-slider-thumb-label-text {
+            opacity: 1 !important;
+            transform: rotate(0deg) !important;
+          }
     }

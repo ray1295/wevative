@@ -9,6 +9,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule, 
+    MatSliderModule,
+    MatSelectModule
   ],
   exports: [
     MatSidenavModule,
@@ -33,7 +37,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule, 
+    MatSliderModule,
+    MatSelectModule
   ],
   declarations: []
 })

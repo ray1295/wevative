@@ -3,6 +3,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MaterialsModule } from './shared/modules/materials/materials.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -44,7 +46,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialsModule
+    MaterialsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
