@@ -47,9 +47,30 @@
           .mat-slider-thumb {
             transform: scale(0) !important;
           }
-          
+          .mat-checkbox-inner-container {
+              margin: 0 10px 0 0;
+              top: 5px;
+              line-height: initial;
+          }
+          .mat-checkbox-label {
+            display: inline-flex;
+            flex-wrap: wrap;
+          }
           .mat-slider-thumb-label-text {
             opacity: 1 !important;
             transform: rotate(0deg) !important;
           }
+          .attachement {
+            // position: absolute;
+            bottom: 5px;
+            left: 0;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+            background-color: $color-background;
+                i {
+                    color: $color-gray;
+                    margin-right: 5px;
+                }          
+            }
     }

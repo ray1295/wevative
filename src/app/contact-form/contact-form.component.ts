@@ -17,6 +17,10 @@ export class ContactFormComponent implements OnInit {
   value: number = 0;
   projectTypes: string[] = ['Logo/Branding', 'Illustration', 'Web Design', 'App Design', 'Other'];
   
+  updateFile(file: HTMLInputElement) {
+    let name = file.value;
+  }
+
   get tickInterval(): number | 'auto' {
     return this.showTicks ? (this.autoTicks ? 'auto' : this._tickInterval) : 0;
   }

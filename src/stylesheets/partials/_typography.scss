@@ -55,6 +55,13 @@ a:active {
   text-decoration: none;
 }
 
-.active-link {
+.active-link{
   color: $color-gray;
+}
+
+.sub-text {
+  color: $color-gray;
+  a {
+    border-bottom: 2px solid #ccc;
+  }
 }
