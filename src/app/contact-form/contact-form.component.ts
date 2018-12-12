@@ -16,10 +16,6 @@ export class ContactFormComponent implements OnInit {
   thumbLabel: boolean = true;
   value: number = 0;
   projectTypes: string[] = ['Logo/Branding', 'Illustration', 'Web Design', 'App Design', 'Other'];
-  
-  updateFile(file: HTMLInputElement) {
-    let name = file.value;
-  }
 
   get tickInterval(): number | 'auto' {
     return this.showTicks ? (this.autoTicks ? 'auto' : this._tickInterval) : 0;
@@ -36,7 +32,7 @@ export class ContactFormComponent implements OnInit {
     email: new FormControl('', [Validators.required, Validators.email]),
     projectBud: new FormControl('', Validators.required),
     projectType: new FormControl('', Validators.required),
-    message: new FormControl(''), 
+    message: new FormControl(''),
     privacyPolicy: new FormControl('', Validators.required),
   });
 
@@ -52,7 +48,6 @@ export class ContactFormComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

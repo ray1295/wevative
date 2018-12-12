@@ -59,6 +59,13 @@ a:active {
   color: $color-gray;
 }
 
+.headline { 
+  width: 50%;
+  margin-bottom: 5%;
+  h3 {
+      margin-top: 3%;
+  }
+}
 .sub-text {
   color: $color-gray;
   a {

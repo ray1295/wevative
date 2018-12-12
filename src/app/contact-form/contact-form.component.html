@@ -47,43 +47,36 @@
     </mat-slider>
 
 
-    <!-- Project Type -> INCOMPLETE: Retrieve project type -->
+    <!-- Start of: Project Type -->
+    <!--#INCOMPLETE# -> Retrieve project ttype -->
     <h4>Project Type</h4>
     <mat-form-field>
       <mat-select formControlName="projectType" multiple>
         <mat-option *ngFor="let projectType of projectTypes" [value]="projectTypes">{{ projectTypes }}</mat-option>
       </mat-select>
     </mat-form-field>
+    <!-- End of: Project Type-->
 
-    <!-- Message -> INCOMPLETE: Placeholder text -->
+    <!-- Project message -->
     <h4>Tell us about your project</h4>
     <mat-form-field appearance="outline">
 
       <!-- Textarea -->
-      <textarea matInput #message maxlength="256" type="text" formControlName="message"></textarea>
+      <textarea 
+      matInput 
+      #message 
+      maxlength="256" 
+      type="text" 
+      formControlName="message"
+      placeholder="Please tell us a bit about what you're looking to collaborate on. Things like scope, timeline, and the issue you'd like to solve are good starting points."
+      ></textarea>
 
       <!-- Word count -->
       <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
 
-      <!-- Form attachment -->
-      <input type="file" id="file-inputs" (change)="fileEvent($event)" />
-      <label class="attachement" for="file-inputs" md-button>
-        <i class="material-icons">attachment</i>
-        Add attachement
-      </label>
-      <!-- 
-      <input #file type="file" (change)="updateFile(file)">
-      <label #file type="text" (change)="updateFile(file)">hello</label> -->
-
-      <!-- <md-button>
-        <label for="fileToUpload">
-          <md-icon md-font-icon="<name>" />
-        </label>
-      </md-button>
-      <input id="#fileToUpload" type="file style=" display:none;"> -->
-
-      <button type="button" md-button (click)="fileInput.click()">Add a photo</button>
-      <input hidden type="file" #imgFileInput (change)="previewImage($event)"/>
+      <!-- #INCOMPLETE# -> Form attachment -->
+      <input class="attachement" type="file" name="myFile" id="file-upload">
+      <i class="material-icons">attachment</i>
 
     </mat-form-field>
 
